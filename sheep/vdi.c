@@ -408,8 +408,6 @@ static int snapshot_vdi(const struct vdi_iocb *iocb, uint32_t new_snapid,
 	base->snap_ctime = iocb->time;
 	base->child_vdi_id[idx] = new_vid;
 
-	/* TODO: multiple sd_write_object should be performed atomically */
-
 	ret = sd_write_object(vid_to_vdi_oid(base_vid), (char *)base,
 			      SD_INODE_HEADER_SIZE, 0, false);
 	if (ret != SD_RES_SUCCESS) {
