@@ -2249,11 +2249,64 @@ out:
 	return ret;
 }
 
+static int vdi_object_dump_inode(int argc, char **argv)
+{
+	struct sd_inode *inode = xzalloc(sizeof(*inode));
+	int fd, ret;
+
+	fd = open(argv[optind], O_RDONLY);
+	if (fd < 0) {
+		sd_err("fialed to open inode object file: %m");
+		return EXIT_FAILURE;
+	}
+
+	ret = xread(fd, inode, sizeof(*inode));
+	if (ret != sizeof(*inode)) {
+		sd_err("fialed to read inode object file: %m");
+		return EXIT_FAILURE;
+	}
+
+	sd_info("name: %s", inode->name);
+	sd_info("tag: %s", inode->tag);
+	sd_info("create_time: %"PRIx64, inode->create_time);
+	sd_info("snap_ctime: %"PRIx64, inode->snap_ctime);
+	sd_info("vm_clock_nsec: %"PRIx64, inode->vm_clock_nsec);
+	sd_info("copy_policy: %d", inode->copy_policy);
+	sd_info("store_policy: %d", inode->store_policy);
+	sd_info("nr_copies: %d", inode->nr_copies);
+	sd_info("block_size_shift: %d", inode->block_size_shift);
+	sd_info("snap_id: %"PRIu32, inode->snap_id);
+	sd_info("vdi_id: %"PRIx32, inode->vdi_id);
+	sd_info("parent_vdi_id: %"PRIx32, inode->parent_vdi_id);
+	sd_info("btree_counter: %"PRIu32, inode->btree_counter);
+
+	sd_info("data_vdi_id:");
+	for (int i = 0; i < SD_INODE_DATA_INDEX; i++) {
+		if (!inode->data_vdi_id[i])
+			continue;
+
+		sd_info("%d: %"PRIu32, i, inode->data_vdi_id[i]);
+	}
+
+	sd_info("gref:");
+	for (int i = 0; i < SD_INODE_DATA_INDEX; i++) {
+		if (!inode->gref[i].generation && !inode->gref[i].count)
+			continue;
+
+		sd_info("%d: %d", inode->gref[i].generation,
+			inode->gref[i].count);
+	}
+
+	return EXIT_SUCCESS;
+}
+
 static struct subcommand vdi_object_cmd[] = {
 	{"location", NULL, NULL, "show object location information",
 	 NULL, CMD_NEED_NODELIST|CMD_NEED_ARG, vdi_object_location},
 	{"map", NULL, NULL, "show object map information",
 	 NULL, CMD_NEED_ARG, vdi_object_map},
+	{"dump-inode", NULL, NULL, "dump inode information",
+	 NULL, CMD_NEED_ARG, vdi_object_dump_inode},
 	{NULL},
 };
 
