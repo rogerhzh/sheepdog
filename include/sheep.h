@@ -20,8 +20,6 @@
 #include "net.h"
 #include "rbtree.h"
 
-static uint8_t master_ip[4]={172,17,2,109};
-
 struct sd_vnode {
 	struct rb_node rb;
 	const struct sd_node *node;
@@ -35,9 +33,6 @@ struct vnode_info {
 	int nr_zones;
 	refcnt_t refcnt;
 };
-
-struct sd_vnode **sd_master_vnode = NULL;
-struct sd_node **sd_master_node = NULL;
 
 static inline void sd_init_req(struct sd_req *req, uint8_t opcode)
 {
@@ -217,22 +212,23 @@ static inline bool node_ismaster(const struct sd_node *a)
 {
 	int ip_offset = 12;
 	for (int i = 0; i < 4; i++) {
-		if (&a->nid->addr[i + ip_offset] != master_ip[i]) 
+		if ((&a->nid)->addr[i + ip_offset] != master_ip[i]) 
 			return false;
 	}
 	return true;
 }
+static struct rb_node void_rb_node;
 
 static inline void
-node_to_vnodes(const struct sd_node *n, struct rb_root *vroot)
+node_to_vnodes(struct sd_node *n, struct rb_root *vroot)
 {
-	if node_ismaster(n) {
+	if (node_ismaster(n)) {
 		n->nr_vnodes = 1;
 		sd_master_node = &n;
 		struct sd_vnode *v = xmalloc(sizeof(*v));
 		v->hash = 0;
 		v->node = n;
-		v->rb = NULL;
+		v->rb = void_rb_node;
 		sd_master_vnode = &v;
 		return;
 	}
