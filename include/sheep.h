@@ -20,6 +20,8 @@
 #include "net.h"
 #include "rbtree.h"
 
+static uint8_t master_ip[4]={172,17,2,109};
+
 struct sd_vnode {
 	struct rb_node rb;
 	const struct sd_node *node;
@@ -33,6 +35,9 @@ struct vnode_info {
 	int nr_zones;
 	refcnt_t refcnt;
 };
+
+struct sd_vnode **sd_master_vnode = NULL;
+struct sd_node **sd_master_node = NULL;
 
 static inline void sd_init_req(struct sd_req *req, uint8_t opcode)
 {
@@ -68,20 +73,23 @@ static inline void oid_to_vnodes(uint64_t oid, struct rb_root *root,
 				 int nr_copies,
 				 const struct sd_vnode **vnodes)
 {
-	const struct sd_vnode *next = oid_to_first_vnode(oid, root);
-
-	vnodes[0] = next;
-	for (int i = 1; i < nr_copies; i++) {
+	vnodes[0] = *sd_master_vnode;
+		
+	if (nr_copies > 1) {
+		const struct sd_vnode *next = oid_to_first_vnode(oid, root);
+		vnodes[1] = next;
+		for (int i = 2; i < nr_copies; i++) {
 next:
-		next = rb_entry(rb_next(&next->rb), struct sd_vnode, rb);
-		if (!next) /* Wrap around */
-			next = rb_entry(rb_first(root), struct sd_vnode, rb);
-		if (unlikely(next == vnodes[0]))
-			panic("can't find a valid vnode");
-		for (int j = 0; j < i; j++)
-			if (same_zone(vnodes[j], next))
-				goto next;
-		vnodes[i] = next;
+			next = rb_entry(rb_next(&next->rb), struct sd_vnode, rb);
+			if (!next) /* Wrap around */
+				next = rb_entry(rb_first(root), struct sd_vnode, rb);
+			if (unlikely(next == vnodes[1]))
+				panic("can't find a valid vnode");
+			for (int j = 0; j < i; j++)
+				if (same_zone(vnodes[j], next))
+					goto next;
+			vnodes[i] = next;
+		}
 	}
 }
 
@@ -204,9 +212,31 @@ static inline bool node_eq(const struct sd_node *a, const struct sd_node *b)
 	return node_cmp(a, b) == 0;
 }
 
+
+static inline bool node_ismaster(const struct sd_node *a)
+{
+	int ip_offset = 12;
+	for (int i = 0; i < 4; i++) {
+		if (&a->nid->addr[i + ip_offset] != master_ip[i]) 
+			return false;
+	}
+	return true;
+}
+
 static inline void
 node_to_vnodes(const struct sd_node *n, struct rb_root *vroot)
 {
+	if node_ismaster(n) {
+		n->nr_vnodes = 1;
+		sd_master_node = &n;
+		struct sd_vnode *v = xmalloc(sizeof(*v));
+		v->hash = 0;
+		v->node = n;
+		v->rb = NULL;
+		sd_master_vnode = &v;
+		return;
+	}
+
 	uint64_t hval = sd_hash(&n->nid, offsetof(typeof(n->nid),
 						  io_addr));
 
