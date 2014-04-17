@@ -36,8 +36,8 @@ struct vnode_info {
 
 /* added for pvce */
 const static uint8_t master_ip[4]={172,17,2,109};
-struct sd_vnode ** sd_master_vnode;
-struct sd_node ** sd_master_node;
+struct sd_vnode * sd_master_vnode;
+struct sd_node * sd_master_node;
 
 static inline void sd_init_req(struct sd_req *req, uint8_t opcode)
 {
@@ -73,7 +73,7 @@ static inline void oid_to_vnodes(uint64_t oid, struct rb_root *root,
 				 int nr_copies,
 				 const struct sd_vnode **vnodes)
 {
-	vnodes[0] = *sd_master_vnode;
+	vnodes[0] = sd_master_vnode;
 		
 	if (nr_copies > 1) {
 		const struct sd_vnode *next = oid_to_first_vnode(oid, root);
@@ -229,14 +229,14 @@ node_to_vnodes(struct sd_node *n, struct rb_root *vroot)
 {
 	if (node_ismaster(n)) {
 		n->nr_vnodes = 1;
-		sd_master_node = &n;
+		sd_master_node = n;
 		struct sd_vnode *v = xmalloc(sizeof(*v));
 		v->hash = 0;
 		v->node = n;
 		v->rb = void_rb_node;
 		if (unlikely(rb_insert(vroot, v, rb, vnode_cmp)))
 			panic("vdisk hash collison");
-		sd_master_vnode = &v;
+		sd_master_vnode = v;
 		return;
 	}
 
