@@ -229,6 +229,8 @@ node_to_vnodes(struct sd_node *n, struct rb_root *vroot)
 		v->hash = 0;
 		v->node = n;
 		v->rb = void_rb_node;
+		if (unlikely(rb_insert(vroot, v, rb, vnode_cmp)))
+			panic("vdisk hash collison");
 		sd_master_vnode = &v;
 		return;
 	}
