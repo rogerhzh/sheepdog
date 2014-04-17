@@ -34,6 +34,11 @@ struct vnode_info {
 	refcnt_t refcnt;
 };
 
+/* added for pvce */
+const static uint8_t master_ip[4]={172,17,2,109};
+struct sd_vnode ** sd_master_vnode;
+struct sd_node ** sd_master_node;
+
 static inline void sd_init_req(struct sd_req *req, uint8_t opcode)
 {
 	memset(req, 0, sizeof(*req));

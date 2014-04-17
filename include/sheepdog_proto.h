@@ -474,9 +474,5 @@ static inline __attribute__((used)) void __sd_proto_build_bug_ons(void)
 	BUILD_BUG_ON(sizeof(struct sd_rsp) != SD_RSP_SIZE);
 }
 
-/* added for pvce */
-static uint8_t master_ip[4]={172,17,2,109};
-static struct sd_vnode **sd_master_vnode = NULL;
-static struct sd_node **sd_master_node = NULL;
 
 #endif

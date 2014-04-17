@@ -31,6 +31,7 @@ static main_thread(struct vnode_info *) current_vnode_info;
 static main_thread(struct list_head *) pending_block_list;
 static main_thread(struct list_head *) pending_notify_list;
 
+
 static int get_zones_nr_from(struct rb_root *nroot)
 {
 	int nr_zones = 0, j;
