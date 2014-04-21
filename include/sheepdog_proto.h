@@ -468,4 +468,5 @@ static inline __attribute__((used)) void __sd_proto_build_bug_ons(void)
 	BUILD_BUG_ON(sizeof(struct sd_rsp) != SD_RSP_SIZE);
 }
 
+
 #endif
