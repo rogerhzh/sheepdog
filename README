@@ -1,6 +1,8 @@
 Sheepdog: Distributed Storage System for KVM
 ============================================
 
+Revised for PVCE
+
 Overview
 --------
 Sheepdog is a distributed storage system for QEMU. It provides
