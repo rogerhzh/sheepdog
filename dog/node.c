@@ -34,12 +34,12 @@ static int node_list(int argc, char **argv)
 	int i = 0;
 
 	if (!raw_output)
-		printf("  Id   Host:Port         V-Nodes       Zone\n");
+		printf("  Id   Host:Port         V-Nodes       Zone    Alive\n");
 	rb_for_each_entry(n, &sd_nroot, rb) {
 		const char *host = addr_to_str(n->nid.addr, n->nid.port);
 
-		printf(raw_output ? "%d %s %d %u\n" : "%4d   %-20s\t%2d%11u\n",
-		       i++, host, n->nr_vnodes, n->zone);
+		printf(raw_output ? "%d %s %d %u\n" : "%4d   %-20s\t%2d%11u   %d \n",
+		       i++, host, n->nr_vnodes, n->zone, n->alive);
 	}
 
 	return EXIT_SUCCESS;
