@@ -42,7 +42,7 @@
  * Currently, only zookeeper driver support SD_MAX_NODES nodes because
  * its message buffer size is large enough to hold nodes[SD_MAX_NODES].
  */
-#define SD_MAX_NODES 6144
+#define SD_MAX_NODES 1000
 #define SD_DEFAULT_VNODES 128
 
 /*
