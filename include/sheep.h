@@ -35,7 +35,7 @@ struct vnode_info {
 };
 
 /* added for pvce */
-const static uint8_t master_ip[4]={172,17,2,109};
+const static uint8_t master_ip[4]={172,16,3,110};
 struct sd_vnode * sd_master_vnode;
 struct sd_node * sd_master_node;
 
