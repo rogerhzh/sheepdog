@@ -956,7 +956,7 @@ out_unlock:
 	sd_rw_unlock(&zk_compete_master_lock);
 }
 
-static int zk_join(const struct sd_node *myself,
+static int zk_join(struct sd_node *myself,
 		   void *opaque, size_t opaque_len)
 {
 	int rc;

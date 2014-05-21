@@ -148,7 +148,7 @@ struct node_id {
 	uint8_t pad[4];
 };
 
-#define SD_NODE_SIZE 80
+#define SD_NODE_SIZE 88
 
 struct sd_node {
 	struct rb_node  rb;
@@ -156,7 +156,7 @@ struct sd_node {
 	uint16_t	nr_vnodes;
 	uint32_t	zone;
 	uint64_t        space;
-	char alive;
+	uint32_t alive;
 };
 
 /*
