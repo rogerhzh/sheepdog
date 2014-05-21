@@ -961,7 +961,8 @@ static int zk_join(const struct sd_node *myself,
 {
 	int rc;
 	char path[MAX_NODE_STR_LEN];
-
+	/* pvce: not sure */
+	myself->alive = 1;
 	this_node.node = *myself;
 
 	snprintf(path, sizeof(path), MEMBER_ZNODE "/%s", node_to_str(myself));
@@ -1078,7 +1079,15 @@ static void zk_handle_accept(struct zk_event *ev)
 	} else
 		zk_node_exists(path);
 
-	zk_tree_add(&ev->sender);
+	/* pvce: check if added before */
+	struct zk_node *n = zk_tree_search(&ev->sender.node.nid);
+
+	if (!n) {
+		zk_tree_add(&ev->sender);
+	}
+	else {
+		n->node.alive = 1;
+	}
 
 	build_node_list();
 	sd_accept_handler(&ev->sender.node, &sd_node_root, nr_sd_nodes,
@@ -1118,7 +1127,8 @@ static void zk_handle_leave(struct zk_event *ev)
 		return;
 	}
 	block_event_list_del(n);
-	zk_tree_del(n);
+//	zk_tree_del(n);
+	n->node.alive = 0;
 	build_node_list();
 	sd_leave_handler(&ev->sender.node, &sd_node_root, nr_sd_nodes);
 }

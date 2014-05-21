@@ -156,6 +156,7 @@ struct sd_node {
 	uint16_t	nr_vnodes;
 	uint32_t	zone;
 	uint64_t        space;
+	char alive;
 };
 
 /*

@@ -509,6 +509,8 @@ static int gateway_forward_request(struct request *req)
 	}
 
 	for (i = 0; i < nr_to_send; i++) {
+		if (!&target_nodes[i]->alive)
+			continue;
 		struct sockfd *sfd;
 		const struct node_id *nid;
 

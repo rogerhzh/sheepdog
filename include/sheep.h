@@ -106,11 +106,14 @@ oid_to_vnode(uint64_t oid, struct rb_root *root, int copy_idx)
 static inline const struct sd_node *
 oid_to_node(uint64_t oid, struct rb_root *root, int copy_idx)
 {
+/*
 	const struct sd_vnode *vnode;
 
 	vnode = oid_to_vnode(oid, root, copy_idx);
 
 	return vnode->node;
+*/
+	return sd_master_node;
 }
 
 static inline void oid_to_nodes(uint64_t oid, struct rb_root *root,
