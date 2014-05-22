@@ -260,7 +260,7 @@ static int gateway_replication_read(struct request *req)
 	oid_to_vnodes(oid, &req->vinfo->vroot, nr_copies, obj_vnodes);
 	for (i = 0; i < nr_copies; i++) {
 		v = obj_vnodes[i];
-		if (!&v->node->alive)
+		if (v->node->alive == 0)
 			continue;
 		if (!vnode_is_local(v))
 			continue;
@@ -282,7 +282,7 @@ static int gateway_replication_read(struct request *req)
 		int idx = (i + j) % nr_copies;
 
 		v = obj_vnodes[idx];
-		if (!&v->node->alive)
+		if (v->node->alive == 0)
 			continue;
 		if (vnode_is_local(v))
 			continue;
@@ -513,7 +513,7 @@ static int gateway_forward_request(struct request *req)
 	}
 
 	for (i = 0; i < nr_to_send; i++) {
-		if (!&target_nodes[i]->alive)
+		if (target_nodes[i]->alive == 0)
 			continue;
 		struct sockfd *sfd;
 		const struct node_id *nid;
