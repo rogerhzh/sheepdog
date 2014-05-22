@@ -934,26 +934,25 @@ main_fn void sd_leave_handler(const struct sd_node *left,
 
 	if (sys->cinfo.status == SD_STATUS_SHUTDOWN)
 		return;
-
+/*
 	if (node_is_local(left))
-		/* Mark leave node as gateway only node */
 		sys->this_node.nr_vnodes = 0;
-
+*/
 	/*
 	 * Using main_thread_get() instead of get_vnode_info() is allowed
 	 * because of the same reason of update_cluster_info()
 	 */
-	old_vnode_info = main_thread_get(current_vnode_info);
-	main_thread_set(current_vnode_info, alloc_vnode_info(nroot));
+/*	old_vnode_info = main_thread_get(current_vnode_info);
+	main_thread_set(current_vnode_info, alloc_vnode_info(nroot)); */
 	if (sys->cinfo.status == SD_STATUS_OK) {
 		ret = inc_and_log_epoch();
 		if (ret != 0)
 			panic("cannot log current epoch %d", sys->cinfo.epoch);
-		start_recovery(main_thread_get(current_vnode_info),
-			       old_vnode_info, true);
+/*		start_recovery(main_thread_get(current_vnode_info),
+			       old_vnode_info, true); */
 	}
 
-	put_vnode_info(old_vnode_info);
+/*	put_vnode_info(old_vnode_info); */
 
 	sockfd_cache_del_node(&left->nid);
 }
