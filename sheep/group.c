@@ -934,10 +934,10 @@ main_fn void sd_leave_handler(const struct sd_node *left,
 
 	if (sys->cinfo.status == SD_STATUS_SHUTDOWN)
 		return;
-/*
+
 	if (node_is_local(left))
 		sys->this_node.nr_vnodes = 0;
-*/
+
 	/*
 	 * Using main_thread_get() instead of get_vnode_info() is allowed
 	 * because of the same reason of update_cluster_info()
