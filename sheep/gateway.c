@@ -260,6 +260,8 @@ static int gateway_replication_read(struct request *req)
 	oid_to_vnodes(oid, &req->vinfo->vroot, nr_copies, obj_vnodes);
 	for (i = 0; i < nr_copies; i++) {
 		v = obj_vnodes[i];
+		if (!&v->node->alive)
+			continue;
 		if (!vnode_is_local(v))
 			continue;
 		ret = peer_read_obj(req);
@@ -280,6 +282,8 @@ static int gateway_replication_read(struct request *req)
 		int idx = (i + j) % nr_copies;
 
 		v = obj_vnodes[idx];
+		if (!&v->node->alive)
+			continue;
 		if (vnode_is_local(v))
 			continue;
 		/*
