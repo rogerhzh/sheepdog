@@ -948,8 +948,8 @@ main_fn void sd_leave_handler(const struct sd_node *left,
 		ret = inc_and_log_epoch();
 		if (ret != 0)
 			panic("cannot log current epoch %d", sys->cinfo.epoch);
-/*		start_recovery(main_thread_get(current_vnode_info),
-			       old_vnode_info, true); */
+		start_recovery(main_thread_get(current_vnode_info),
+			       old_vnode_info, true); 
 	}
 
 /*	put_vnode_info(old_vnode_info); */
