@@ -944,7 +944,7 @@ main_fn void sd_leave_handler(const struct sd_node *left,
 	 */
 
 	old_vnode_info = main_thread_get(current_vnode_info);
-/*	main_thread_set(current_vnode_info, alloc_vnode_info(nroot));  */
+	main_thread_set(current_vnode_info, alloc_vnode_info(nroot));  
 	if (sys->cinfo.status == SD_STATUS_OK) {
 		ret = inc_and_log_epoch();
 		if (ret != 0)
@@ -953,7 +953,7 @@ main_fn void sd_leave_handler(const struct sd_node *left,
 			       old_vnode_info, true); 
 	}
 
-/*	put_vnode_info(old_vnode_info);  */
+	put_vnode_info(old_vnode_info);  
 
 	sockfd_cache_del_node(&left->nid);
 }
