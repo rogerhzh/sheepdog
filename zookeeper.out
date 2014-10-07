@@ -1,0 +1,197 @@
+2014-05-23 21:18:41,389 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /home/zookeeper/zookeeper-3.4.5/bin/../conf/zoo.cfg
+2014-05-23 21:18:41,393 [myid:] - ERROR [main:QuorumPeerConfig@283] - Invalid configuration, only one server specified (ignoring)
+2014-05-23 21:18:41,416 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2014-05-23 21:18:41,416 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2014-05-23 21:18:41,417 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2014-05-23 21:18:41,417 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2014-05-23 21:18:41,474 [myid:] - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /home/zookeeper/zookeeper-3.4.5/bin/../conf/zoo.cfg
+2014-05-23 21:18:41,474 [myid:] - ERROR [main:QuorumPeerConfig@283] - Invalid configuration, only one server specified (ignoring)
+2014-05-23 21:18:41,475 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
+2014-05-23 21:18:41,488 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+2014-05-23 21:18:41,489 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=dog110
+2014-05-23 21:18:41,489 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.7.0_55
+2014-05-23 21:18:41,489 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2014-05-23 21:18:41,490 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.55.x86_64/jre
+2014-05-23 21:18:41,490 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/home/zookeeper/zookeeper-3.4.5/bin/../build/classes:/home/zookeeper/zookeeper-3.4.5/bin/../build/lib/*.jar:/home/zookeeper/zookeeper-3.4.5/bin/../lib/slf4j-log4j12-1.6.1.jar:/home/zookeeper/zookeeper-3.4.5/bin/../lib/slf4j-api-1.6.1.jar:/home/zookeeper/zookeeper-3.4.5/bin/../lib/netty-3.2.2.Final.jar:/home/zookeeper/zookeeper-3.4.5/bin/../lib/log4j-1.2.15.jar:/home/zookeeper/zookeeper-3.4.5/bin/../lib/jline-0.9.94.jar:/home/zookeeper/zookeeper-3.4.5/bin/../zookeeper-3.4.5.jar:/home/zookeeper/zookeeper-3.4.5/bin/../src/java/lib/*.jar:/home/zookeeper/zookeeper-3.4.5/bin/../conf:
+2014-05-23 21:18:41,490 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2014-05-23 21:18:41,491 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/tmp
+2014-05-23 21:18:41,491 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2014-05-23 21:18:41,491 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Linux
+2014-05-23 21:18:41,491 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=amd64
+2014-05-23 21:18:41,492 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=2.6.32-358.el6.x86_64
+2014-05-23 21:18:41,492 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=root
+2014-05-23 21:18:41,492 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/root
+2014-05-23 21:18:41,493 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/home/sheepdog_pku
+2014-05-23 21:18:41,509 [myid:] - INFO  [main:ZooKeeperServer@726] - tickTime set to 2000
+2014-05-23 21:18:41,509 [myid:] - INFO  [main:ZooKeeperServer@735] - minSessionTimeout set to -1
+2014-05-23 21:18:41,509 [myid:] - INFO  [main:ZooKeeperServer@744] - maxSessionTimeout set to -1
+2014-05-23 21:18:41,559 [myid:] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
+2014-05-23 21:18:41,602 [myid:] - INFO  [main:FileSnap@83] - Reading snapshot /var/lib/zookeeper/version-2/snapshot.756
+2014-05-23 21:18:41,985 [myid:] - INFO  [main:FileTxnSnapLog@240] - Snapshotting: 0xdf2 to /var/lib/zookeeper/version-2/snapshot.df2
+2014-05-23 21:19:14,000 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146249934f6004e, timeout of 30000ms exceeded
+2014-05-23 21:19:14,001 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146249934f6004a, timeout of 30000ms exceeded
+2014-05-23 21:19:14,001 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146249934f6004e
+2014-05-23 21:19:14,002 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146249934f6004a
+2014-05-23 21:19:14,002 [myid:] - INFO  [SyncThread:0:FileTxnLog@199] - Creating new log file: log.df3
+2014-05-23 21:20:06,745 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.108:35207
+2014-05-23 21:20:06,919 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.108:35207; will be dropped if server is in r-o mode
+2014-05-23 21:20:06,920 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.108:35207
+2014-05-23 21:20:06,945 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720000 with negotiated timeout 30000 for client /172.16.3.108:35207
+2014-05-23 21:20:06,955 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720000 type:create cxid:0x537f4a41 zxid:0xdf6 txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:20:06,966 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720000 type:create cxid:0x537f4a42 zxid:0xdf7 txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:20:06,974 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720000 type:create cxid:0x537f4a43 zxid:0xdf8 txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:20:06,982 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720000 type:create cxid:0x537f4a44 zxid:0xdf9 txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:20:06,990 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720000 type:create cxid:0x537f4a45 zxid:0xdfa txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 21:20:07,064 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.109:35369
+2014-05-23 21:20:07,064 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.109:35369; will be dropped if server is in r-o mode
+2014-05-23 21:20:07,065 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.109:35369
+2014-05-23 21:20:07,090 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720001 with negotiated timeout 30000 for client /172.16.3.109:35369
+2014-05-23 21:20:07,091 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720001 type:create cxid:0x537f4aca zxid:0xdfd txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:20:07,099 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720001 type:create cxid:0x537f4acb zxid:0xdfe txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:20:07,107 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720001 type:create cxid:0x537f4acc zxid:0xe00 txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:20:07,141 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720001 type:create cxid:0x537f4acd zxid:0xe01 txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:20:07,150 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720001 type:create cxid:0x537f4ace zxid:0xe02 txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 21:20:09,755 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.110:56321
+2014-05-23 21:20:09,756 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.110:56321; will be dropped if server is in r-o mode
+2014-05-23 21:20:09,757 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.110:56321
+2014-05-23 21:20:09,778 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720002 with negotiated timeout 30000 for client /172.16.3.110:56321
+2014-05-23 21:20:09,779 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720002 type:create cxid:0x53801ca5 zxid:0xe0a txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:20:09,786 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720002 type:create cxid:0x53801ca6 zxid:0xe0b txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:20:09,794 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720002 type:create cxid:0x53801ca7 zxid:0xe0c txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:20:09,803 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720002 type:create cxid:0x53801ca8 zxid:0xe0d txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:20:09,811 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720002 type:create cxid:0x53801ca9 zxid:0xe0e txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 21:20:30,843 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.102:52169
+2014-05-23 21:20:30,843 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.102:52169; will be dropped if server is in r-o mode
+2014-05-23 21:20:30,844 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.102:52169
+2014-05-23 21:20:30,891 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720003 with negotiated timeout 30000 for client /172.16.3.102:52169
+2014-05-23 21:20:30,892 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720003 type:create cxid:0x537f4c3b zxid:0xe14 txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:20:30,900 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720003 type:create cxid:0x537f4c3c zxid:0xe15 txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:20:30,908 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720003 type:create cxid:0x537f4c3d zxid:0xe16 txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:20:30,916 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720003 type:create cxid:0x537f4c3e zxid:0xe17 txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:20:30,924 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720003 type:create cxid:0x537f4c3f zxid:0xe18 txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 21:21:02,686 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.106:41233
+2014-05-23 21:21:02,687 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.106:41233; will be dropped if server is in r-o mode
+2014-05-23 21:21:02,687 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.106:41233
+2014-05-23 21:21:02,740 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720004 with negotiated timeout 30000 for client /172.16.3.106:41233
+2014-05-23 21:21:02,741 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720004 type:create cxid:0x537f4774 zxid:0xe1e txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:21:02,749 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720004 type:create cxid:0x537f4775 zxid:0xe1f txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:21:02,757 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720004 type:create cxid:0x537f4776 zxid:0xe20 txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:21:02,765 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720004 type:create cxid:0x537f4777 zxid:0xe21 txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:21:02,773 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720004 type:create cxid:0x537f4778 zxid:0xe22 txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 21:22:43,687 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.101:35107
+2014-05-23 21:22:43,688 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.101:35107; will be dropped if server is in r-o mode
+2014-05-23 21:22:43,688 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.101:35107
+2014-05-23 21:22:43,709 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720005 with negotiated timeout 30000 for client /172.16.3.101:35107
+2014-05-23 21:22:43,709 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720005 type:create cxid:0x537edb4a zxid:0xe28 txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:22:43,717 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720005 type:create cxid:0x537edb4b zxid:0xe29 txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:22:43,725 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720005 type:create cxid:0x537edb4c zxid:0xe2a txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:22:43,733 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720005 type:create cxid:0x537edb4d zxid:0xe2b txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:22:43,742 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720005 type:create cxid:0x537edb4e zxid:0xe2c txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 21:23:06,880 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.103:47273
+2014-05-23 21:23:06,881 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.103:47273; will be dropped if server is in r-o mode
+2014-05-23 21:23:06,881 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.103:47273
+2014-05-23 21:23:06,890 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720006 with negotiated timeout 30000 for client /172.16.3.103:47273
+2014-05-23 21:23:06,890 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720006 type:create cxid:0x537f4c50 zxid:0xe32 txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:23:06,898 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720006 type:create cxid:0x537f4c51 zxid:0xe33 txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:23:06,906 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720006 type:create cxid:0x537f4c52 zxid:0xe34 txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:23:06,915 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720006 type:create cxid:0x537f4c53 zxid:0xe35 txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:23:06,923 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720006 type:create cxid:0x537f4c54 zxid:0xe36 txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 21:23:25,546 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.105:46640
+2014-05-23 21:23:25,546 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.105:46640; will be dropped if server is in r-o mode
+2014-05-23 21:23:25,547 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.105:46640
+2014-05-23 21:23:25,570 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720007 with negotiated timeout 30000 for client /172.16.3.105:46640
+2014-05-23 21:23:25,570 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720007 type:create cxid:0x537f4cd1 zxid:0xe3c txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 21:23:25,578 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720007 type:create cxid:0x537f4cd2 zxid:0xe3d txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 21:23:25,586 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720007 type:create cxid:0x537f4cd3 zxid:0xe3e txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 21:23:25,594 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720007 type:create cxid:0x537f4cd4 zxid:0xe3f txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 21:23:25,603 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720007 type:create cxid:0x537f4cd5 zxid:0xe40 txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-23 23:38:03,202 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /172.16.3.107:53717
+2014-05-23 23:38:03,203 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@793] - Connection request from old client /172.16.3.107:53717; will be dropped if server is in r-o mode
+2014-05-23 23:38:03,203 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@839] - Client attempting to establish new session at /172.16.3.107:53717
+2014-05-23 23:38:03,215 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@595] - Established session 0x146293bc7720008 with negotiated timeout 30000 for client /172.16.3.107:53717
+2014-05-23 23:38:03,215 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720008 type:create cxid:0x537bca90 zxid:0xe46 txntype:-1 reqpath:n/a Error Path:/sheepdog Error:KeeperErrorCode = NodeExists for /sheepdog
+2014-05-23 23:38:03,223 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720008 type:create cxid:0x537bca91 zxid:0xe47 txntype:-1 reqpath:n/a Error Path:/sheepdog/master Error:KeeperErrorCode = NodeExists for /sheepdog/master
+2014-05-23 23:38:03,232 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720008 type:create cxid:0x537bca92 zxid:0xe48 txntype:-1 reqpath:n/a Error Path:/sheepdog/queue Error:KeeperErrorCode = NodeExists for /sheepdog/queue
+2014-05-23 23:38:03,240 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720008 type:create cxid:0x537bca93 zxid:0xe49 txntype:-1 reqpath:n/a Error Path:/sheepdog/member Error:KeeperErrorCode = NodeExists for /sheepdog/member
+2014-05-23 23:38:03,248 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@627] - Got user-level KeeperException when processing sessionid:0x146293bc7720008 type:create cxid:0x537bca94 zxid:0xe4a txntype:-1 reqpath:n/a Error Path:/sheepdog/lock Error:KeeperErrorCode = NodeExists for /sheepdog/lock
+2014-05-24 18:34:20,424 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720002, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,425 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.110:56321 which had sessionid 0x146293bc7720002
+2014-05-24 18:34:20,498 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720008, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,498 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.107:53717 which had sessionid 0x146293bc7720008
+2014-05-24 18:34:20,509 [myid:] - ERROR [SyncThread:0:NIOServerCnxn@180] - Unexpected Exception: 
+java.nio.channels.CancelledKeyException
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.interestOps(SelectionKeyImpl.java:77)
+	at org.apache.zookeeper.server.NIOServerCnxn.sendBuffer(NIOServerCnxn.java:153)
+	at org.apache.zookeeper.server.NIOServerCnxn.sendResponse(NIOServerCnxn.java:1076)
+	at org.apache.zookeeper.server.FinalRequestProcessor.processRequest(FinalRequestProcessor.java:404)
+	at org.apache.zookeeper.server.SyncRequestProcessor.flush(SyncRequestProcessor.java:167)
+	at org.apache.zookeeper.server.SyncRequestProcessor.run(SyncRequestProcessor.java:101)
+2014-05-24 18:34:20,580 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720000, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,581 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.108:35207 which had sessionid 0x146293bc7720000
+2014-05-24 18:34:20,637 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720001, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,638 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.109:35369 which had sessionid 0x146293bc7720001
+2014-05-24 18:34:20,835 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720006, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,836 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.103:47273 which had sessionid 0x146293bc7720006
+2014-05-24 18:34:20,893 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720003, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,894 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.102:52169 which had sessionid 0x146293bc7720003
+2014-05-24 18:34:20,933 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720004, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,934 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.106:41233 which had sessionid 0x146293bc7720004
+2014-05-24 18:34:20,939 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720005, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:20,939 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.101:35107 which had sessionid 0x146293bc7720005
+2014-05-24 18:34:21,011 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@349] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x146293bc7720007, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:220)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:208)
+	at java.lang.Thread.run(Thread.java:744)
+2014-05-24 18:34:21,012 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1001] - Closed socket connection for client /172.16.3.105:46640 which had sessionid 0x146293bc7720007
+2014-05-24 18:34:52,000 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720005, timeout of 30000ms exceeded
+2014-05-24 18:34:52,000 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720003, timeout of 30000ms exceeded
+2014-05-24 18:34:52,001 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720001, timeout of 30000ms exceeded
+2014-05-24 18:34:52,001 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720004, timeout of 30000ms exceeded
+2014-05-24 18:34:52,001 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720000, timeout of 30000ms exceeded
+2014-05-24 18:34:52,002 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720002, timeout of 30000ms exceeded
+2014-05-24 18:34:52,002 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720007, timeout of 30000ms exceeded
+2014-05-24 18:34:52,002 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720008, timeout of 30000ms exceeded
+2014-05-24 18:34:52,002 [myid:] - INFO  [SessionTracker:ZooKeeperServer@325] - Expiring session 0x146293bc7720006, timeout of 30000ms exceeded
+2014-05-24 18:34:52,003 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720005
+2014-05-24 18:34:52,005 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720003
+2014-05-24 18:34:52,007 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720001
+2014-05-24 18:34:52,008 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720004
+2014-05-24 18:34:52,008 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720000
+2014-05-24 18:34:52,008 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720002
+2014-05-24 18:34:52,009 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720007
+2014-05-24 18:34:52,009 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720008
+2014-05-24 18:34:52,009 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@476] - Processed session termination for sessionid: 0x146293bc7720006
